@@ -24,5 +24,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'local_completion_report';
-$plugin->version  = 2023013100;   // The (date) version of this plugin
-$plugin->requires = 2023100900;   // Requires this Moodle version
+$plugin->version  = 2024013100;
+$plugin->requires = 2023100900;
