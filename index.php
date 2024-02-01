@@ -54,7 +54,7 @@
     $table = new html_table();
     $table->head = array('Course Name', 'Status', 'Completion Date');
     foreach ($completions as $completion) {
-        $date = $completion->timecompleted ? userdate($completion->timecompleted) : $str_na;
+        $date = $completion->timecompleted ? userdate($completion->timecompleted, get_string('strftimedatetime', 'langconfig')) : $str_na;
         $status = $completion->completed ? $str_completed : $str_not_completed;
         $courseurl = new moodle_url('/course/view.php', array('id' => $completion->id));
         $coursename = html_writer::link($courseurl, $completion->fullname);
